@@ -35,24 +35,25 @@ This project serves as a practical example of building scalable, extensible tool
 
 ## 🧩 Architecture Overview
 ┌───────────────────────────┐
-│       User Request        │
+│ User Request │
 └───────────────┬───────────┘
-                ▼
-      ┌───────────────────┐
-      │  Intent Parser    │
-      └─────────┬─────────┘
-                ▼
-      ┌───────────────────┐
-      │  Tool Router      │───► Selects the correct tool
-      └─────────┬─────────┘
-                ▼
-      ┌───────────────────┐
-      │  Tool Executor    │───► Runs tool logic
-      └─────────┬─────────┘
-                ▼
-      ┌───────────────────┐
-      │  Response Builder │───► Returns final answer
-      └───────────────────┘
+▼
+┌───────────────────┐
+│ Intent Parser │
+└─────────┬─────────┘
+▼
+┌───────────────────┐
+│ Tool Router │───► Selects the correct tool
+└─────────┬─────────┘
+▼
+┌───────────────────┐
+│ Tool Executor │───► Runs tool logic
+└─────────┬─────────┘
+▼
+┌───────────────────┐
+│ Response Builder │───► Returns final answer
+└───────────────────┘
+      
 
 
 
