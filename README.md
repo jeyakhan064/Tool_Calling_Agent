@@ -34,7 +34,6 @@ This project serves as a practical example of building scalable, extensible tool
 ------------------------------------------------------------
 
 ## 🧩 Architecture Overview
-
 ┌───────────────────────────┐
 │       User Request        │
 └───────────────┬───────────┘
@@ -54,6 +53,8 @@ This project serves as a practical example of building scalable, extensible tool
       ┌───────────────────┐
       │  Response Builder │───► Returns final answer
       └───────────────────┘
+
+
 
 ------------------------------------------------------------
 
